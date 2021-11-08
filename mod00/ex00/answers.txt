@@ -1,0 +1,4 @@
+pip list
+pip list -V
+pip show numpy
+pip search tesseract #Ne fonctionne plus
