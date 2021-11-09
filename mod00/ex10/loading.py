@@ -5,7 +5,12 @@ def ft_progress(lst):
 	count = 0
 	for ptr in lst:
 		count += 1
-		sys.stdout.write("ETA: {:d} [{:3d}]   \r" % ((100 * count)/len(lst)) )
+		ptr4 = ""
+		for i in range (0, int((10 * count)/len(lst))):
+			ptr4 += "="
+		for i in range(int((10 * count)/len(lst)), 11):
+			ptr4 += " "
+		sys.stdout.write("ETA: [{:03d}] [{:}>]  \r".format(int((100 * count)/len(lst)), ptr4))
 		sys.stdout.flush()
 		yield ptr
 
