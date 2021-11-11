@@ -87,5 +87,3 @@ class recipe:
 		txt += "\nDuree de la preparation: " + str(self.cooking_time) + "\nIngredients: " + str(self.ingredients)
 		txt += "\nPeut etre mange au: " + self.recipe_type
 		return txt
-lol = recipe("test", 5, 10, ["gateau", "sucre"], "delicieux", "lunch")
-print(str(lol))
